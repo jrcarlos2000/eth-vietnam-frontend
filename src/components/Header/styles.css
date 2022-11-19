@@ -1,45 +1,62 @@
 .headerContent {
-    justify-content: flex-end;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
     background-color: #DBE6E9;
     height: 83px;
     border-radius: 12px;
+    max-width: 1480px;
 }
 
 .headerButtons{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    height: 34px;
-    width: 130px;
+    height: 44px;
+    width: 91px;
     border-radius: 12px;
     border: 1px solid #000000;
-   margin-right: 28px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.plusButton{
+    height: 44px;
+    width: 44px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    margin-right: 11px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboardButton{
+    height: 44px;
+    width: 180px;
+    border-radius: 12px;
+    border: 1px solid #000000;
     background-color: transparent;
     text-align: center;
     vertical-align: middle;
     line-height: 27px;
-}
-
-.connect-button {
-    margin-right: 34px;
+    cursor: pointer;
 }
 
 .logo{
-    margin-right: 100px;
     width: 50px;
 }
-.headertext{
-    display: flex ;
-    justify-content: flex-start;
-    margin-right: 15px;
+.title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-right: 5px;
+    
 }
 .eth-text {
     display: flex ;
     justify-content: flex-start;
-    margin-right: 200px;
-    max-width: 110px;
+    margin-right: 300px;
+    max-width: 130px;
+    
 }
 
 

@@ -1,5 +1,11 @@
-.wrapper {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 698px;
 }
+
+.inputField{
+    width: 67698px;
+}
+
