@@ -1,0 +1,36 @@
+/*.container{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+
+
+.title{
+    position: absolute;
+    width: 670px;
+    height: 100px;
+    left: 70px;
+    top: 135px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.label{
+    position: absolute;
+    width: 323px;
+    height: 49px;
+    left: 382px;
+    top: 136px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+}
