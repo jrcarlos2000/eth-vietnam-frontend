@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.4.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@rainbow-me/rainbowkit": "^0.8.0",
@@ -14,6 +17,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "ethers": "^5.7.2",
+    "framer-motion": "^7.6.7",
     "material-ui": "^0.20.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
