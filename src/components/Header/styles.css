@@ -1,0 +1,45 @@
+.headerContent {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    background-color: #DBE6E9;
+    height: 83px;
+    border-radius: 12px;
+}
+
+.headerButtons{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 34px;
+    width: 130px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+   margin-right: 28px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27px;
+}
+
+.connect-button {
+    margin-right: 34px;
+}
+
+.logo{
+    margin-right: 100px;
+    width: 50px;
+}
+.headertext{
+    display: flex ;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+.eth-text {
+    display: flex ;
+    justify-content: flex-start;
+    margin-right: 200px;
+    max-width: 110px;
+}
+
+
