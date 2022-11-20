@@ -1,5 +1,6 @@
-input {
+input, textarea {
     padding: 14px;
+    font-family: 'Comfortaa';
 }
 .uploadFacet {
     flex-direction: column;
@@ -57,7 +58,14 @@ input {
     align-items: center;
     color: #000000;
 }
-
+.textInput {
+    box-sizing: border-box;
+    width: 646px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 2px solid #1E1E1E;
+    border-radius: 12px;
+}
 .abiLabel{
     width: 323px;
     height: 49px;
@@ -98,4 +106,13 @@ input {
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
+}
+
+.uploadContainer {
+    display: flex;
+    flex-direction: column;
+}
+.uploadSubmit {
+    margin-top: 16px;
+    width: 120px;
 }
