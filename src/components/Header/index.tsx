@@ -1,7 +1,6 @@
 import './styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import WalletButton from "./WalletButton";
-import { Flex, Box } from '@chakra-ui/react';
 import facetsLogo from '../../assets/facets-logo.svg';
 import { useNavigate } from "react-router-dom";
 

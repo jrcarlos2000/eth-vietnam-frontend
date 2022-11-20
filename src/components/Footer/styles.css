@@ -1,9 +1,7 @@
 .footerContent {
-    position: absolute;
-    width: 1480px;
+    width: 100%;
+    margin-top: 100px;
     height: 139px;
-    left: 0px;
-    top: 843px;
     background: #DEDDDD;
     display: flex;
     justify-content: flex-end;

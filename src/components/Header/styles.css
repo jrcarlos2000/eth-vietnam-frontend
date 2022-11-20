@@ -67,5 +67,7 @@
     font-size: 15px;
     max-width: 120px;
 }
-
+.headerContent {
+    margin: 14px;
+}
 

@@ -4,7 +4,7 @@ import './styles.css';
 const UploadFacet = () => {
 
     return (
-        <div >
+        <div className="uploadFacet">
            <text className={"title"}>Upload a Facet</text>
             <label className={"label"}>title</label>
             <input className={"titleInput"} placeholder={"title"}  />

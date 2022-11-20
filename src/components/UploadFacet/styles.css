@@ -1,9 +1,11 @@
+
+.uploadFacet {
+    flex-direction: column;
+    padding: 80px 100px;
+}
 .title{
-    position: absolute;
     width: 670px;
     height: 98px;
-    left: 46px;
-    top: 118px;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -14,11 +16,8 @@
 }
 
 .label{
-    position: absolute;
     width: 323px;
     height: 49px;
-    left: 45px;
-    top: 216px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -30,11 +29,8 @@
 
 .titleInput{
     box-sizing: border-box;
-    position: absolute;
     width: 646px;
     height: 49px;
-    left: 45px;
-    top: 272px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
@@ -42,21 +38,15 @@
 
 .descriptionInput{
     box-sizing: border-box;
-    position: absolute;
     width: 646px;
     height: 49px;
-    left: 46px;
-    top: 385px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
 }
 .descriptionLabel{
-    position: absolute;
     width: 323px;
     height: 49px;
-    left: 53px;
-    top: 328px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -67,11 +57,8 @@
 }
 
 .abiLabel{
-    position: absolute;
     width: 323px;
     height: 49px;
-    left: 53px;
-    top: 440px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -82,23 +69,17 @@
 }
 
 .abiInput{
-box-sizing: border-box;
-position: absolute;
-width: 646px;
-height: 100px;
-left: 46px;
-top: 493px;
-background: #FFFFFF;
-border: 2px solid #1E1E1E;
-border-radius: 12px;
+    box-sizing: border-box;
+    width: 646px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 2px solid #1E1E1E;
+    border-radius: 12px;
 }
 
 .sourceLabel{
-    position: absolute;
     width: 323px;
     height: 49px;
-    left: 53px;
-    top: 593px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -110,11 +91,8 @@ border-radius: 12px;
 
 .sourceInput{
     box-sizing: border-box;
-    position: absolute;
     width: 646px;
     height: 100px;
-    left: 46px;
-    top: 642px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
