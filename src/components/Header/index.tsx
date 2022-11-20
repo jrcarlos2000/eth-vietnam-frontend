@@ -1,7 +1,7 @@
 import './styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import WalletButton from "./WalletButton";
-import facetsLogo from '../../assets/facets-logo.svg';
+// import facetsLogo from '../../assets/facets-logo.svg';
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -9,8 +9,10 @@ const Header = () => {
     return (
         <nav className={'headerContent'}>
                 <div className={'headerLeft'}>
-                    <text className={"headerTitle"}>Facets.wiki</text>
-                    <img src={facetsLogo} alt={"logo"} className={"headerLogo"} />
+                    <div onClick={() => navigate('/')}>
+                        <p className={"headerTitle"}>Facets.wiki</p>
+                    </div>
+                    <img src={'assets/facets-logo.svg'} alt={"logo"} className={"headerLogo"} />
                     <div className={"headerEthText"}>
                         <p>Ethereum Diamond Facets Library and Inspector</p>
                     </div>

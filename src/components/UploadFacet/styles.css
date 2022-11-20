@@ -1,4 +1,6 @@
-
+input {
+    padding: 14px;
+}
 .uploadFacet {
     flex-direction: column;
     padding: 80px 100px;

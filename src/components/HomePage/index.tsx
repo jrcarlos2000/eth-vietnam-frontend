@@ -6,22 +6,22 @@ import UploadFacet from "../UploadFacet";
 const HomePage = () => {
 
     return (
-        <div >
+        <div className="homeContainer">
             {/*<Dashboard/>*/}
             {/*<UploadFacet/>*/}
-            <div >
-                <text className={"boxText"}>Facets Leaderboard</text>
+            <div className="leaderboardContainer">
+                <h1 className={"boxText"}>Facets Leaderboard</h1>
                 <Box className={"leaderBox"} >
                     <div className={"boxTopContent"}>
-                    <text>name</text>
-                    <text>used</text>
+                    <p>name</p>
+                    <p>used</p>
                         <line className={"verticalLine"}/>
                         <line className={"horizontalLine"}/>
                     </div>
                     <li className={"dataBox"}>data</li>
                 </Box>
             </div>
-            <div className={"container"}>
+            <div className={"searchContainer"}>
                 <text className={"aboveFieldText"}>Search for Facets</text>
                 <input className={"inputField"} placeholder={"Keyword"} />
                 <input className={"inputField2"} placeholder={"Enter address"}  />
