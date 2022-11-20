@@ -3,21 +3,22 @@ import '@rainbow-me/rainbowkit/styles.css';
 import WalletButton from "./WalletButton";
 import { Flex, Box } from '@chakra-ui/react';
 import facetsLogo from '../../assets/facets-logo.svg';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <nav className={'headerContent'}>
                 <div className={'headerLeft'}>
                     <text className={"headerTitle"}>Facets.wiki</text>
                     <img src={facetsLogo} alt={"logo"} className={"headerLogo"} />
                     <div className={"headerEthText"}>
-                        <text>Ethereum Diamond Facets Library and Inspector</text>
+                        <p>Ethereum Diamond Facets Library and Inspector</p>
                     </div>
                 </div>
                 <div className={'headerRight'}>
-                    <button className={"headerButtons"}>Facet</button>
+                    <button className={"headerButtons"} onClick={() => navigate('/upload-facet')}>Facet</button>
                     <button className={"headerButtons"}>Wiki</button>
-                    <button className={"plusButton"}>+</button> 
                     <button className={"dashboardButton"} >Dashboard</button>
                     <WalletButton />
                 </div>

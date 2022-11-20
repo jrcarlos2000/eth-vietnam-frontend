@@ -1,5 +1,4 @@
-import Header from "../Header";
-import Footer from "../Footer";
+
 import './styles.css';
 import {Box} from "@material-ui/core";
 import UploadFacet from "../UploadFacet";
@@ -8,7 +7,6 @@ const HomePage = () => {
 
     return (
         <div >
-            <Header />
             {/*<Dashboard/>*/}
             {/*<UploadFacet/>*/}
             <div >
@@ -29,8 +27,7 @@ const HomePage = () => {
                 <input className={"inputField2"} placeholder={"Enter address"}  />
                 <text className={"aboveFieldText2"}>Facets visualizers</text>
             </div>
-            <Footer/>
-            </div>
+        </div>
     )
 }
 export default HomePage;
