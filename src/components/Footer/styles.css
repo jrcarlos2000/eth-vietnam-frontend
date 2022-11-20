@@ -1,14 +1,17 @@
 .footerContent {
     position: absolute;
-    width: 1800px;
+    width: 1480px;
     height: 139px;
     left: 0px;
     top: 843px;
     background: #DEDDDD;
+    display: flex;
+    justify-content: flex-end;
 }
 
 a {
     display: flex;
+    height: 65px;
     justify-content: flex-end;
     text-decoration: none;
     text-transform: capitalize;

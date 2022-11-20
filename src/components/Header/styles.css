@@ -1,45 +1,71 @@
 .headerContent {
-    justify-content: flex-end;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     background-color: #DBE6E9;
     height: 83px;
     border-radius: 12px;
 }
-
-.headerButtons{
+.headerRight {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    height: 34px;
-    width: 130px;
+    margin-right: 20px;
+}
+.headerLeft {
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.headerButtons{
+    height: 44px;
+    width: 91px;
     border-radius: 12px;
     border: 1px solid #000000;
-   margin-right: 28px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.plusButton{
+    height: 44px;
+    width: 44px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    margin-right: 11px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.dashboardButton{
+    height: 44px;
+    width: 180px;
+    border-radius: 12px;
+    border: 1px solid #000000;
     background-color: transparent;
     text-align: center;
     vertical-align: middle;
     line-height: 27px;
+    cursor: pointer;
+    margin-right: 12px;
 }
 
-.connect-button {
-    margin-right: 34px;
+.headerLogo {
+    width: 32px;
+    margin-right: 12px;
 }
-
-.logo{
-    margin-right: 100px;
-    width: 50px;
+.headerTitle{
+    font-size: 24px;
+    line-height: 26px;
+    margin-right: 12px;
 }
-.headertext{
+.headerEthText {
     display: flex ;
     justify-content: flex-start;
-    margin-right: 15px;
-}
-.eth-text {
-    display: flex ;
-    justify-content: flex-start;
-    margin-right: 200px;
-    max-width: 110px;
+    font-size: 15px;
+    max-width: 120px;
 }
 
 
