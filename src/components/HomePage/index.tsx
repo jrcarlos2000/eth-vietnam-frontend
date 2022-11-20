@@ -24,10 +24,10 @@ const HomePage = () => {
                <FacetsTable data={facets} />
             </div>
             <div className={"searchContainer"}>
-                <text className={"aboveFieldText"}>Search for Facets</text>
-                <input className={"inputField"} placeholder={"Keyword"} />
-                <input className={"inputField2"} placeholder={"Enter address"}  />
-                <text className={"aboveFieldText2"}>Facets visualizers</text>
+                <h3 className={"aboveFieldText"}>Search for Facets</h3>
+                <input className={"inputField inputField--keyword"} placeholder={"Keyword"} />
+                <h3 className={"aboveFieldText2"}>Facets visualizers</h3>
+                <input className={"inputField inputField--address"} placeholder={"Enter address"}  />
             </div>
         </div>
     )

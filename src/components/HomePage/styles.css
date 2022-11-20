@@ -15,14 +15,15 @@
     width: 50%;
 }
 
-.inputField{
+.inputField {
     display: flex;
     justify-content: center;
-    width: 656px;
-    height: 64px;
+    height: 42px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
     border-radius: 12px;
+    padding: 8px;
+    margin: 10px 0px;
 }
 
 .aboveFieldText{
