@@ -23,13 +23,13 @@ const UploadFacet = () => {
             <div className="uploadContainer">
                 <label className={"label"} onChange={(e: any) => setTitle(e.target.value)}>title</label>
                 <input className={"textInput titleInput"} placeholder={"title"}  />
-                <label className={"descriptionLabel"}>description</label>
+                <label className={"label descriptionLabel"}>description</label>
                 <input className={"textInput descriptionInput"} onChange={(e: any) => setDesc(e.target.value)} placeholder={"description"} />
                 <label className={"label addressLabel"}>address</label>
                 <input className={"textInput addressInput"} onChange={(e: any) => setAddress(e.target.value)} placeholder={"address"} />
                 {/* <label className={"abiLabel"}>upload ABI</label>
                 <input className={"abiInput"} placeholder={"Paste ABI code"} /> */}
-                <label className={"ABILabel"} >ABI code</label>
+                <label className={"label ABILabel"} >ABI code</label>
                 <textarea rows={4} cols={50} className={"sourceInput"} placeholder={"Paste source code"} onChange={(e: any) => setABI(e.target.value)}></textarea>
                 <button className={"button uploadSubmit"} onClick={handleSubmit}>submit</button>
             </div>

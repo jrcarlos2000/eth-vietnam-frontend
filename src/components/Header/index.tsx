@@ -18,9 +18,9 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={'headerRight'}>
-                    <button className={"headerButtons"} onClick={() => navigate('/upload-facet')}>Facet</button>
-                    <button className={"headerButtons"}>Wiki</button>
-                    <button className={"dashboardButton"} >Dashboard</button>
+                    <button className={"headerButton"} onClick={() => navigate('/upload-facet')}>Facet</button>
+                    <button className={"headerButton"}>Wiki</button>
+                    <button className={"headerButton"} >Dashboard</button>
                     <WalletButton />
                 </div>
         </nav>

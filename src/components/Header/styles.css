@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     background-color: #DBE6E9;
-    height: 83px;
     border-radius: 12px;
+    padding: 6px 8px;
 }
 .headerRight {
     display: flex;
@@ -16,40 +16,16 @@
     justify-content: center;
     align-items: center;
 }
-.headerButtons{
-    height: 44px;
-    width: 91px;
-    border-radius: 12px;
-    border: 1px solid #000000;
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 12px;
-}
 
-.plusButton{
-    height: 44px;
-    width: 44px;
-    border-radius: 12px;
-    border: 1px solid #000000;
-    margin-right: 11px;
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 12px;
-}
-
-.dashboardButton{
-    height: 44px;
-    width: 180px;
+.headerButton {
     border-radius: 12px;
     border: 1px solid #000000;
     background-color: transparent;
     text-align: center;
     vertical-align: middle;
-    line-height: 27px;
     cursor: pointer;
     margin-right: 12px;
+    padding: 6px 12px;
 }
 
 .headerLogo {
@@ -64,10 +40,15 @@
 .headerEthText {
     display: flex ;
     justify-content: flex-start;
-    font-size: 15px;
-    max-width: 120px;
+    font-size: 14px;
+    max-width: 180px;
+    padding: 6px 8px;
 }
 .headerContent {
     margin: 14px;
 }
-
+@media only screen and (max-width: 768px) {
+    .headerContent {
+        flex-direction: column;
+    }
+}

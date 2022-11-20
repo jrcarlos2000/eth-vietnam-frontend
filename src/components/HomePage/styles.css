@@ -37,7 +37,6 @@
 
 .inputField2{
     box-sizing: border-box;
-    width: 656px;
     height: 64px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
@@ -77,6 +76,12 @@
     line-height: 18px;
 }
 
-
-
-
+@media only screen and (max-width: 768px) {
+    .homeContainer {
+        flex-direction: column;
+        margin: 40px 16px;
+    }
+    .leaderboardContainer {
+        width: 100%;
+    }
+}

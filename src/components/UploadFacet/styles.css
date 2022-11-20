@@ -5,9 +5,10 @@ input, textarea {
 .uploadFacet {
     flex-direction: column;
     padding: 80px 100px;
+    width: 50%;
 }
 .title{
-    width: 670px;
+    width:100%;
     height: 98px;
     font-style: normal;
     font-weight: 400;
@@ -19,7 +20,7 @@ input, textarea {
 }
 
 .label{
-    width: 323px;
+    width:100%;
     height: 49px;
     font-style: normal;
     font-weight: 400;
@@ -48,7 +49,7 @@ input, textarea {
     border-radius: 12px;
 }
 .descriptionLabel{
-    width: 323px;
+    width:100%;
     height: 49px;
     font-style: normal;
     font-weight: 400;
@@ -67,7 +68,7 @@ input, textarea {
     border-radius: 12px;
 }
 .abiLabel{
-    width: 323px;
+    width:100%;
     height: 49px;
     font-style: normal;
     font-weight: 400;
@@ -88,7 +89,7 @@ input, textarea {
 }
 
 .sourceLabel{
-    width: 323px;
+    width:100%;
     height: 49px;
     font-style: normal;
     font-weight: 400;
