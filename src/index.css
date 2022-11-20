@@ -1,4 +1,12 @@
-
+:root {
+    --border-black: #1f1e1e;
+    --bg-gray: #DEDDDD;
+    --border-radius: 12px;
+}
 body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+p {
     margin: 0px;
 }

@@ -1,25 +1,27 @@
 
 import './styles.css';
-import {Box} from "@material-ui/core";
 import UploadFacet from "../UploadFacet";
+import FacetsTable from '../FacetsTable/index';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const HomePage = () => {
+    const [facets, setFacets] = useState<any>([]);
+    useEffect(() => {
+        loadFacets();
+    }, []);
+
+    const loadFacets = async () => {
+        const result = await axios.get('https://shark-app-ciezx.ondigitalocean.app/facets');
+        console.log(`resutl: ${JSON.stringify(result.data.facets)}`);
+        
+        setFacets(result?.data?.facets);
+    }
 
     return (
         <div className="homeContainer">
-            {/*<Dashboard/>*/}
-            {/*<UploadFacet/>*/}
             <div className="leaderboardContainer">
-                <h1 className={"boxText"}>Facets Leaderboard</h1>
-                <Box className={"leaderBox"} >
-                    <div className={"boxTopContent"}>
-                    <p>name</p>
-                    <p>used</p>
-                        <line className={"verticalLine"}/>
-                        <line className={"horizontalLine"}/>
-                    </div>
-                    <li className={"dataBox"}>data</li>
-                </Box>
+               <FacetsTable data={facets} />
             </div>
             <div className={"searchContainer"}>
                 <text className={"aboveFieldText"}>Search for Facets</text>
