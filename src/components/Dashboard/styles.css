@@ -6,8 +6,7 @@
 
 
 
-.title{
-    position: absolute;
+.titleDashboard {
     width: 670px;
     height: 100px;
     left: 70px;
@@ -20,8 +19,7 @@
     align-items: center;
 }
 
-.label{
-    position: absolute;
+.labelDashboard {
     width: 323px;
     height: 49px;
     left: 382px;

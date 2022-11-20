@@ -20,7 +20,7 @@ const FacetsTable = (props: PropsType) => {
   }
   return (
     <div className="tableContainer">
-      <h1 className={"boxText"}>Facets Leaderboard</h1>
+      <h1 className={"boxText"}>Facets Library</h1>
       <div className={"facetsTable"} >
           <div className={"tableHeaderContainer"}>
               <div className={"tableHeader tableHeader1"}>

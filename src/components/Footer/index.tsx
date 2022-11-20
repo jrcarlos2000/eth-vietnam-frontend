@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <>
             <nav className={'footerContent'}>
-                <a href='#'><img src={'assets/TwitterLogo.svg'} /></a>
-                <a href='#'><img src={'assets/DiscordLogo.svg'} /></a>
+                {/* <a href='#'><img src={'assets/TwitterLogo.svg'} /></a>
+                <a href='#'><img src={'assets/DiscordLogo.svg'} /></a> */}
             </nav>
         </>
     )

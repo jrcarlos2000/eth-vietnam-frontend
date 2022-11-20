@@ -24,6 +24,8 @@
     border-radius: 12px;
     padding: 8px;
     margin: 10px 0px;
+    width: auto;
+    max-width: 600px;
 }
 
 .aboveFieldText{
@@ -36,7 +38,6 @@
 }
 
 .inputField2{
-    box-sizing: border-box;
     height: 64px;
     background: #FFFFFF;
     border: 2px solid #1E1E1E;
@@ -83,5 +84,8 @@
     }
     .leaderboardContainer {
         width: 100%;
+    }
+    .searchContainer {
+        width: auto;
     }
 }

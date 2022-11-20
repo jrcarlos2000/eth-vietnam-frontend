@@ -21,8 +21,8 @@ const UploadFacet = () => {
         <div className="uploadFacet">
             <h1 className={"title"}>Upload a Facet</h1>
             <div className="uploadContainer">
-                <label className={"label"} onChange={(e: any) => setTitle(e.target.value)}>title</label>
-                <input className={"textInput titleInput"} placeholder={"title"}  />
+                <label className={"label"} >title</label>
+                <input className={"textInput titleInput"} onChange={(e: any) => setTitle(e.target.value)} placeholder={"title"}  />
                 <label className={"label descriptionLabel"}>description</label>
                 <input className={"textInput descriptionInput"} onChange={(e: any) => setDesc(e.target.value)} placeholder={"description"} />
                 <label className={"label addressLabel"}>address</label>
