@@ -5,14 +5,14 @@ import axios from 'axios';
 const UploadFacet = () => {
     const [title, setTitle] = useState<string>('');
     const [desc, setDesc] = useState<string>('');
-    const [source, setSource] = useState<string>('');
+    const [ABI, setABI] = useState<string>('');
     const [address, setAddress] = useState<string>('');
     const handleSubmit = async () => {
         const result = await axios.post('https://shark-app-ciezx.ondigitalocean.app/add-facet', {
             name: title,
             description: desc,
             address,
-            src: source
+            abi: ABI
             // name, src, address, description
         });
         console.log('result ->>>', JSON.stringify(result));
@@ -29,8 +29,8 @@ const UploadFacet = () => {
                 <input className={"textInput addressInput"} onChange={(e: any) => setAddress(e.target.value)} placeholder={"address"} />
                 {/* <label className={"abiLabel"}>upload ABI</label>
                 <input className={"abiInput"} placeholder={"Paste ABI code"} /> */}
-                <label className={"sourceLabel"} >source code</label>
-                <textarea rows={4} cols={50} className={"sourceInput"} placeholder={"Paste source code"} onChange={(e: any) => setSource(e.target.value)}></textarea>
+                <label className={"ABILabel"} >ABI code</label>
+                <textarea rows={4} cols={50} className={"sourceInput"} placeholder={"Paste source code"} onChange={(e: any) => setABI(e.target.value)}></textarea>
                 <button className={"button uploadSubmit"} onClick={handleSubmit}>submit</button>
             </div>
         </div>
