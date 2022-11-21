@@ -7,16 +7,25 @@ type PropTypes = {
 const FacetsHistory = ({ history }: PropTypes) => {
   const renderFacetHistory = (event: any) => {
       return (
-          <div className="facetListRow" key={event.title}>
-              <div className="facetListLeft">
-                  <h3 className="facetListTitle">
-                      {event.title}    
+          <div className="historytRow" key={event.title}>
+              <div className="historytTop">
+                  <h3 className="historytTitle">
+                      {event.action}    
                   </h3>
-                  <a className="facetListAddress" href="/">{event.address}</a>
+                  <div className="historyTimestamp">
+                    timestamp: {event.timestamp}
+                  </div>
               </div>
+              <a className="genericLink historyAddress" href="/">facet: {event.facetAddr}</a>
+              <div className="historyFuncName">function name: {event.functionName}</div>
           </div>
       )
   }
+
+  // "timestamp": "1668976736",
+  // "action": "Add",
+  // "functionName": "0x04f955a1",
+  // "facetAddr": "0x960cB211D6f406d21097789b624134185c78Aa26"
 
   return (
     <div className="facetsHistoryContainer">

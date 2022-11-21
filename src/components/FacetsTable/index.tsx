@@ -27,7 +27,7 @@ const FacetsTable = (props: PropsType) => {
                   <p>name</p>
               </div>
               <div className="tableHeader tableHeader2">
-                  <p>used</p>
+                  <p>users</p>
               </div>
           </div>
           <div className="tableOuter">

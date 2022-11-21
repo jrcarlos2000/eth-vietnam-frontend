@@ -3,17 +3,25 @@
   width: 50%;
   padding: 4px 10px;
 }
-.facetsListAddress {
-  color: var(--link-blue);
-}
 .facetList {
   width: 100%;
 }
-.facetListRow {
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-  border: solid 2px var(--border-black);
+.historytTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.historytRow {
+  border-top: solid 1px var(--border-black);
   padding: 10px 14px;
+
+}
+.historyTimestamp {
+  font-size: 12px;
+}
+.historyFuncName {
+  font-size: 16px;
+  margin-top: 4px;
 }
 @media only  screen and (max-width: 768px) {
   .facetsHistoryContainer {

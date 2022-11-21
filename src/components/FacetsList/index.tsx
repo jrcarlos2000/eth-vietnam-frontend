@@ -64,15 +64,6 @@ const FacetsList = ({ facets }: PropTypes) => {
                         )
                       })
                     }
-                    
-                  {/* "functions": [
-                {
-                    "_id": "637b0f8bf7a12b0457d7f5d3",
-                    "selector": "0xcdffacc6",
-                    "functionName": "facetAddress(bytes4)",
-                    "facetAddr": "0x77518beac3fb4AB2bd6F5A722f31b6cF5E4B91E1",
-                    "facetName": "DiamondLoupeFacet"
-                }, */}
                   </div>
                 </div>
               )

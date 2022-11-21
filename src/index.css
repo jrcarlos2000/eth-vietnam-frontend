@@ -23,3 +23,8 @@ p, h3, h1, h2 {
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
+
+.genericLink {
+    color: var(--link-blue);
+    cursor: pointer;
+}
