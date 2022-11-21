@@ -1,5 +1,5 @@
 
-.facetsListContainer {
+.facetsHistoryContainer {
   width: 50%;
   padding: 4px 10px;
 }
@@ -16,7 +16,7 @@
   padding: 10px 14px;
 }
 @media only  screen and (max-width: 768px) {
-  .facetsListContainer {
+  .facetsHistoryContainer {
       width: 100%;
   }
 }

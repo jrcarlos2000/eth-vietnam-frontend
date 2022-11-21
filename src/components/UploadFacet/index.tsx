@@ -31,7 +31,7 @@ const UploadFacet = () => {
                 <input className={"abiInput"} placeholder={"Paste ABI code"} /> */}
                 <label className={"label ABILabel"} >ABI code</label>
                 <textarea rows={4} cols={50} className={"sourceInput"} placeholder={"Paste source code"} onChange={(e: any) => setABI(e.target.value)}></textarea>
-                <button className={"button uploadSubmit"} onClick={handleSubmit}>submit</button>
+                <button className={"buttonGeneric uploadSubmit"} onClick={handleSubmit}>submit</button>
             </div>
         </div>
     )
