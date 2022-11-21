@@ -1,0 +1,21 @@
+
+.facetsListContainer {
+  width: 50%;
+}
+.facetsListAddress {
+  color: var(--link-blue);
+}
+.facetList {
+  width: 100%;
+}
+.facetListRow {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: solid 2px var(--border-black);
+  padding: 10px 14px;
+}
+@media only  screen and (max-width: 768px) {
+  .facetsListContainer {
+      width: 100%;
+  }
+}
