@@ -15,18 +15,6 @@
     width: 50%;
 }
 
-.inputField {
-    display: flex;
-    justify-content: center;
-    height: 42px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
-    border-radius: 12px;
-    padding: 8px 16px;
-    margin: 10px 0px;
-    width: auto;
-    max-width: 600px;
-}
 
 .aboveFieldText{
     font-weight: 400;
@@ -34,13 +22,13 @@
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: var(--font-color);
 }
 
 .inputField2{
     height: 64px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 
@@ -53,7 +41,7 @@
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: var(--font-color);
 }
 
 .boxText {
@@ -66,7 +54,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: var(--font-color);
 }
 
 .boxTopContent{
