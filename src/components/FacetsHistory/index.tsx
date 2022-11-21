@@ -13,7 +13,7 @@ const FacetsHistory = ({ history }: PropTypes) => {
                       {event.action}    
                   </h3>
                   <div className="historyTimestamp">
-                    timestamp: {event.timestamp}
+                    {`${(new Date(Number(event.timestamp) * 1000)).toLocaleDateString()} ${(new Date(Number(event.timestamp) * 1000)).toLocaleTimeString()}`}
                   </div>
               </div>
               <a className="genericLink historyAddress" href="/">facet: {event.facetAddr}</a>
@@ -21,12 +21,6 @@ const FacetsHistory = ({ history }: PropTypes) => {
           </div>
       )
   }
-
-  // "timestamp": "1668976736",
-  // "action": "Add",
-  // "functionName": "0x04f955a1",
-  // "facetAddr": "0x960cB211D6f406d21097789b624134185c78Aa26"
-
   return (
     <div className="facetsHistoryContainer">
         <h3 className={"title"}>History</h3>
