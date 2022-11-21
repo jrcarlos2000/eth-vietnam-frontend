@@ -4,6 +4,7 @@ import axios from 'axios';
 import { API_URL } from '../../utils/constants';
 import "./style.css";
 import { useSigner } from 'wagmi'
+import { ethers } from 'ethers';
 
 const FacetDetail = () => {
   const { data: signer, isError, isLoading } = useSigner()
@@ -53,15 +54,17 @@ const FacetDetail = () => {
     });
     console.log('post result: ', JSON.stringify(result.data));
 
+    const txCount = await signer?.getTransactionCount();
+    console.log('txCount ', txCount);
     const response = await signer?.sendTransaction(
       {
         data: result.data.payload,
         to: diamondAddress,
-        gasLimit: '100000'
+        gasLimit: '1000000',
+        nonce: ethers.utils.hexlify(txCount!),
       }
     );
     console.log('response: ', response);
-
   }
 
   console.log('facetAddress ', facetAddress);

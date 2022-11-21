@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
                 <div className={'headerRight'}>
                     <button className={"headerButton"} onClick={() => navigate('/upload-facet')}>Upload</button>
-                    <button className={"headerButton"} onClick={() => navigate('https://carlos-ramos.gitbook.io/facets-wiki/')}>Wiki</button>
+                    <button className={"headerButton"} onClick={() => window.location.href = 'https://carlos-ramos.gitbook.io/facets-wiki/'}>Wiki</button>
                     <button className={"headerButton"} onClick={() => navigate('/dashboard')} >Dashboard</button>
                     <WalletButton />
                 </div>
