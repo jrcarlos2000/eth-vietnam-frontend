@@ -1,14 +1,21 @@
 import './styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
-// import TwitterLogo from '../../assets/TwitterLogo.svg';
-// import DiscordLogo from '../../assets/DiscordLogo.svg';
+import {Text} from "@chakra-ui/react";
+import DarkMode from "../../DarkMode";
+
 
 const Footer = () => {
     return (
         <>
             <nav className={'footerContent'}>
-                {/* <a href='#'><img src={'assets/TwitterLogo.svg'} /></a>
-                <a href='#'><img src={'assets/DiscordLogo.svg'} /></a> */}
+                <div className={"contentLeft"}>
+                    <Text>Facet.wiki</Text>
+                    <DarkMode/>
+                </div>
+                <a href='#'><img src={'assets/TwitterLogo.svg'} /></a>
+               <a href='#'><img alt={"discord"} src={'assets/DiscordLogo.svg'} /></a>
+                <a href='#'><img src={'assets/telegram.svg'} /></a>
+                <a href='https://github.com/jrcarlos2000/eth-vietnam-frontend'><img src={'assets/github.svg'} /></a>
             </nav>
         </>
     )

@@ -6,5 +6,6 @@ html { font-family: 'Comfortaa', sans-serif;}
 body{
   background-color: white;
   font-family: 'Comfortaa';
+  min-height: 100vh;
   
 }

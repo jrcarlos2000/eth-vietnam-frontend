@@ -16,7 +16,7 @@ input, textarea {
     line-height: 40px;
     display: flex;
     align-items: center;
-    color: #000000;
+   
 }
 
 .label{
@@ -28,7 +28,7 @@ input, textarea {
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000;
+    
 }
 
 .titleInput{
@@ -57,7 +57,7 @@ input, textarea {
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000;
+    
 }
 .textInput {
     box-sizing: border-box;
@@ -76,7 +76,7 @@ input, textarea {
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000; 
+   
 }
 
 .abiInput{
@@ -97,7 +97,7 @@ input, textarea {
     line-height: 27px;
     display: flex;
     align-items: center;
-    color: #000000;
+   
 }
 
 .sourceInput{
