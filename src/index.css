@@ -4,6 +4,7 @@
     --link-blue: #022E9F;
     --bg-blue: hsl(193, 24%, 89%);
     --bg-dark-gray: #DEDDDD;
+    --background-red: #ffc1c1;
 
     --font-color: rgb(27, 27, 27);
     --background-color: #f1f1f1;
@@ -21,6 +22,7 @@
     --font-color: #eee;
     --background-color: #4a4a4a;
     --link-color: lightblue;
+    --background-red: #611515;
 }
 
 body {
@@ -71,4 +73,7 @@ input, textarea {
     margin: 10px 0px;
     width: auto;
     max-width: 600px;
+}
+.buttonRemove {
+    background-color: var(--background-red);
 }

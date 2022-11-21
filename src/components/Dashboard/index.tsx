@@ -3,6 +3,7 @@ import { useState } from 'react';
 import FacetsList from '../FacetsList';
 import FacetsHistory from '../FacetsHistory';
 import axios from 'axios';
+import { API_URL } from '../../utils/constants';
 
 const demoFacet = {
     facetName: 'DemoFacet',
@@ -15,11 +16,13 @@ const Dashboard = () => {
 
     const handleSubmit = async () => {
         
-        const result: any = await axios.post('https://shark-app-ciezx.ondigitalocean.app/get-diamond-info', { "address": address });
+        const result: any = await axios.post(`${API_URL}/get-diamond-info`, { "address": address });
         console.log(`result: ${JSON.stringify(result)}`);
 
         setFacets(result.data.facets);
         setHistory(result.data.history);
+
+
     }
 
     return (
@@ -31,7 +34,7 @@ const Dashboard = () => {
                 <button className="buttonGeneric addressSubmit" onClick={handleSubmit}>inspect</button>
             </div>
             <div className="dashbaordBodyContainer">
-                <FacetsList facets={facets} />  
+                <FacetsList facets={facets} address={address} />  
                 <FacetsHistory history={history} />
             </div>
         </div>

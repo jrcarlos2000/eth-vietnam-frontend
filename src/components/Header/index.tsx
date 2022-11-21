@@ -19,7 +19,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={'headerRight'}>
-                    <button className={"headerButton"} onClick={() => navigate('/upload-facet')}>Facet</button>
+                    <button className={"headerButton"} onClick={() => navigate('/upload-facet')}>Upload</button>
                     <button className={"headerButton"}>Wiki</button>
                     <button className={"headerButton"} onClick={() => navigate('/dashboard')} >Dashboard</button>
                     <WalletButton />

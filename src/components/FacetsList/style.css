@@ -56,6 +56,8 @@
   border-top: solid 1px var(--border-black);
   margin-top: 8px;
   padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 @media only  screen and (max-width: 768px) {
   .facetsListContainer {
