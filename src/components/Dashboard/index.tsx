@@ -15,14 +15,11 @@ const Dashboard = () => {
     const [address, setAddress] = useState<string>("");
 
     const handleSubmit = async () => {
-        
         const result: any = await axios.post(`${API_URL}/get-diamond-info`, { "address": address });
         console.log(`result: ${JSON.stringify(result)}`);
 
         setFacets(result.data.facets);
         setHistory(result.data.history);
-
-
     }
 
     return (

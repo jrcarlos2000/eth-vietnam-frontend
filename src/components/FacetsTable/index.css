@@ -23,6 +23,7 @@
   margin: 0 40px;
 }
 .facetTableRow {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   border-bottom: solid 1px var(--border-black);

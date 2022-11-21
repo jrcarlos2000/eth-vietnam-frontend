@@ -12,10 +12,10 @@ const Footer = () => {
                     <Text>Facet.wiki</Text>
                     <DarkMode/>
                 </div>
-                <a href='#'><img src={'assets/TwitterLogo.svg'} /></a>
-               <a href='#'><img alt={"discord"} src={'assets/DiscordLogo.svg'} /></a>
-                <a href='#'><img src={'assets/telegram.svg'} /></a>
-                <a href='https://github.com/jrcarlos2000/eth-vietnam-frontend'><img src={'assets/github.svg'} /></a>
+                <a href='#'><img src={'/assets/TwitterLogo.svg'} /></a>
+               <a href='#'><img alt={"discord"} src={'/assets/DiscordLogo.svg'} /></a>
+                <a href='#'><img src={'/assets/telegram.svg'} /></a>
+                <a href='https://github.com/jrcarlos2000/eth-vietnam-frontend'><img src={'/assets/github.svg'} /></a>
             </nav>
         </>
     )

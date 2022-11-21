@@ -15,8 +15,11 @@
     text-transform: capitalize;
     margin-right: 40px !important;
 }
+.footerContent a img {
+    width: 20px;
+}
 
-.contentLeft{
+.contentLeft {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

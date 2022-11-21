@@ -1,13 +1,16 @@
 import './index.css';
+import { useNavigate, useParams } from "react-router-dom";
 
 type PropsType = {
   data: any[],
 }
 
 const FacetsTable = (props: PropsType) => {
+  const navigate = useNavigate();
+  
   const renderFacet = (facet: any) => {
     return (
-      <div className="facetTableRow" key={facet.name}>
+      <div className="facetTableRow" key={facet.name} onClick={() => navigate(`/facet/${facet.address}`)}>
         <div className="row70">
           {facet.name}
         </div>

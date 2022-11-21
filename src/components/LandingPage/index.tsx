@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 const LandingPage = () => {const navigate = useNavigate();
     return (
         <div className='container'>
-            <img alt={"logo"} src={'assets/facets-logo.svg'} className='logo'/>
+            <img alt={"logo"} src={'/assets/facets-logo.svg'} className='logo'/>
             <div className='center-body-text'>
                 Best developer tools to manage and modularize your smart contracts. 
             </div>
