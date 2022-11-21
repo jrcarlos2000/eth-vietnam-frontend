@@ -1,18 +1,18 @@
 import './style.css';
 
 type PropTypes = {
-  facets: any;
+  history: any;
 }
 
-const FacetsHistory = ({ facets }: PropTypes) => {
-  const renderFacetHistory = (facet: any) => {
+const FacetsHistory = ({ history }: PropTypes) => {
+  const renderFacetHistory = (event: any) => {
       return (
-          <div className="facetListRow">
+          <div className="facetListRow" key={event.title}>
               <div className="facetListLeft">
                   <h3 className="facetListTitle">
-                      {facet.title}    
+                      {event.title}    
                   </h3>
-                  <a className="facetListAddress" href="/">{facet.address}</a>
+                  <a className="facetListAddress" href="/">{event.address}</a>
               </div>
           </div>
       )
@@ -23,7 +23,7 @@ const FacetsHistory = ({ facets }: PropTypes) => {
         <h3 className={"title"}>History</h3>
         <div className="facetsHistory">
             {
-                facets.map(renderFacetHistory)
+                history.map(renderFacetHistory)
             }
         </div>
     </div>  

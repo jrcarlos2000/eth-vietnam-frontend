@@ -1,4 +1,3 @@
-import {Box} from "@material-ui/core";
 import './index.css';
 
 type PropsType = {
@@ -8,7 +7,7 @@ type PropsType = {
 const FacetsTable = (props: PropsType) => {
   const renderFacet = (facet: any) => {
     return (
-      <div className="facetTableRow">
+      <div className="facetTableRow" key={facet.name}>
         <div className="row70">
           {facet.name}
         </div>
@@ -18,6 +17,7 @@ const FacetsTable = (props: PropsType) => {
       </div>
     )
   }
+
   return (
     <div className="tableContainer">
       <h1 className={"boxText"}>Facets Library</h1>
@@ -34,7 +34,6 @@ const FacetsTable = (props: PropsType) => {
             {
               props.data.map(renderFacet)
             }
-
           </div>
       </div>
   </div>

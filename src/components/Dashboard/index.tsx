@@ -10,27 +10,16 @@ const demoFacet = {
 }
 const Dashboard = () => {
     const [facets, setFacets] = useState<any>([demoFacet]);
+    const [history, setHistory] = useState<any>([demoFacet]);
     const [address, setAddress] = useState<string>("");
 
     const handleSubmit = async () => {
-        // axios({
-        //     method: 'post',
-        //     url: baseUrl + 'applications/' + appName + '/dataexport/plantypes' + plan,
-        //     headers: {}, 
-        //     data: {
-        //       foo: 'bar', // This is the body part
-        //     }
-        //   });
+        
+        const result: any = await axios.post('https://shark-app-ciezx.ondigitalocean.app/get-diamond-info', { "address": address });
+        console.log(`result: ${JSON.stringify(result)}`);
 
-        const result = await axios({
-            url: 'https://shark-app-ciezx.ondigitalocean.app/get-diamond-info', 
-            data: { address: address },
-            headers: {},
-            method: 'get',
-        });
-        console.log(`result: ${result}`);
-
-        setFacets(result.data);
+        setFacets(result.data.facets);
+        setHistory(result.data.history);
     }
 
     return (
@@ -43,7 +32,7 @@ const Dashboard = () => {
             </div>
             <div className="dashbaordBodyContainer">
                 <FacetsList facets={facets} />  
-                <FacetsHistory facets={facets} />
+                <FacetsHistory history={history} />
             </div>
         </div>
     )
