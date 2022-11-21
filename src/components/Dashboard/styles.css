@@ -44,6 +44,7 @@
 .dashbaordBodyContainer {
     display: flex;
     flex-direction: row;
+    min-height: 400px;
 }
 @media only  screen and (max-width: 768px) {
     .facetsListContainer {

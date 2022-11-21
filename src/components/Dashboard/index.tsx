@@ -5,14 +5,14 @@ import FacetsHistory from '../FacetsHistory';
 import axios from 'axios';
 import { API_URL } from '../../utils/constants';
 
-const demoFacet = {
-    facetName: 'DemoFacet',
-    facetAddr: '0x4dD955166E2d614dd30951b0b7D1788aeFbA02AB',
-}
+// const demoFacet = {
+//     facetName: 'DemoFacet',
+//     facetAddr: '0x4dD955166E2d614dd30951b0b7D1788aeFbA02AB',
+// }
 const Dashboard = () => {
-    const [facets, setFacets] = useState<any>([demoFacet]);
-    const [history, setHistory] = useState<any>([demoFacet]);
-    const [address, setAddress] = useState<string>("");
+    const [facets, setFacets] = useState<any>([]);
+    const [history, setHistory] = useState<any>([]);
+    const [address, setAddress] = useState<string>("0x4dD955166E2d614dd30951b0b7D1788aeFbA02AB");
 
     const handleSubmit = async () => {
         const result: any = await axios.post(`${API_URL}/get-diamond-info`, { "address": address });

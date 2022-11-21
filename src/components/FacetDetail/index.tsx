@@ -23,12 +23,29 @@ const FacetDetail = () => {
     }
   }
   const addFunction = async (funcName: string) => {
+    const diamondAddress = prompt("please enter your diamond address") || "";
+    console.log('functionNames ', funcName, facetAddress, diamondAddress);
+    const result = await axios.post(`${API_URL}/update-diamond`, {
+      funcList: [funcName],
+      action: 'add',
+      facetAddr: facetAddress
+    });
+    console.log('post result: ', JSON.stringify(result.data));
+
+    const response = await signer?.sendTransaction(
+      {
+        data: result.data.payload,
+        to: diamondAddress,
+        gasLimit: '100000'
+      }
+    );
+    console.log('response: ', response);
 
   }
   const addFacet = async () => {
     const functionNames = selectors.map((s: any) => s.functionName);
     const diamondAddress = prompt("please enter your diamond address") || "";
-    console.log('functionNames ', functionNames, facetAddress);
+    console.log('functionNames ', functionNames, facetAddress, diamondAddress);
     const result = await axios.post(`${API_URL}/update-diamond`, {
       funcList: functionNames,
       action: 'add',
