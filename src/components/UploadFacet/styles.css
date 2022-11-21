@@ -35,8 +35,8 @@ input, textarea {
     box-sizing: border-box;
     width: 646px;
     height: 49px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 
@@ -44,8 +44,8 @@ input, textarea {
     box-sizing: border-box;
     width: 646px;
     height: 49px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 .descriptionLabel{
@@ -63,8 +63,8 @@ input, textarea {
     box-sizing: border-box;
     width: 646px;
     height: 49px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 .abiLabel{
@@ -83,8 +83,8 @@ input, textarea {
     box-sizing: border-box;
     width: 646px;
     height: 100px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 
@@ -104,8 +104,8 @@ input, textarea {
     box-sizing: border-box;
     width: 646px;
     height: 100px;
-    background: #FFFFFF;
-    border: 2px solid #1E1E1E;
+    background: var(--background-color);
+    border: 2px solid var(--border-black);
     border-radius: 12px;
 }
 
