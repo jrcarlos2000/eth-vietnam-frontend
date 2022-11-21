@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const navigate = useNavigate();
+    
     return (
         <nav className={'headerContent'}>
                 <div className={'headerLeft'}>

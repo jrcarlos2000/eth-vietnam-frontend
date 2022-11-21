@@ -32,6 +32,7 @@
 .headerLogo {
     width: 32px;
     margin-right: 12px;
+    cursor: pointer;
 }
 .headerTitle{
     font-size: 24px;
