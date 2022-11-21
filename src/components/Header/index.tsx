@@ -2,10 +2,12 @@ import './styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import WalletButton from "./WalletButton";
 // import facetsLogo from '../../assets/facets-logo.svg';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
 
 const Header = () => {
     const navigate = useNavigate();
+    let {landingView} = useParams();
     
     return (
         <nav className={'headerContent'}>
