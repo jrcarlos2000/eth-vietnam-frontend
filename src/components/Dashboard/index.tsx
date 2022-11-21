@@ -5,8 +5,8 @@ import FacetsHistory from '../FacetsHistory';
 import axios from 'axios';
 
 const demoFacet = {
-    title: 'DemoFacet',
-    address: '0x2f2ef2f2f2efe2f2f2f2f2',
+    facetName: 'DemoFacet',
+    facetAddr: '0xa353373ef1f0d442676dd3130aea23e041942179',
 }
 const Dashboard = () => {
     const [facets, setFacets] = useState<any>([demoFacet]);
