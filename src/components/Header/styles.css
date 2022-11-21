@@ -2,7 +2,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background-color: #DBE6E9;
+    background-color: var(--bg-blue);
     border-radius: 12px;
     padding: 6px 8px;
 }
@@ -19,13 +19,14 @@
 
 .headerButton {
     border-radius: 12px;
-    border: 1px solid #000000;
+    border: 1px solid var(--border-black);
     background-color: transparent;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     margin-right: 12px;
     padding: 6px 12px;
+    color: var(--font-color);
 }
 
 .headerLogo {

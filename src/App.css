@@ -2,10 +2,3 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Inter:wght@500&display=swap');
 
 html { font-family: 'Comfortaa', sans-serif;}
-
-body{
-  background-color: white;
-  font-family: 'Comfortaa';
-  min-height: 100vh;
-  
-}

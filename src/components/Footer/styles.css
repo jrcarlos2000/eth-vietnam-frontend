@@ -2,11 +2,9 @@
     width: 100%;
     margin-top: 100px;
     height: 139px;
-    background: #DEDDDD;
+    background: var(--bg-dark-gray);
     display: flex;
     justify-content: flex-end;
-    position:absolute;
-    bottom:0;
 }
 
 .footerContent a {

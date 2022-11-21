@@ -2,14 +2,42 @@
     --border-black: #1f1e1e;
     --bg-gray: #DEDDDD;
     --link-blue: #022E9F;
+    --bg-blue: hsl(193, 24%, 89%);
+    --bg-dark-gray: #DEDDDD;
+
+    --font-color: rgb(27, 27, 27);
+    --background-color: #f1f1f1;
 
     --border-radius: 12px;
     --box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
 }
-body{
+
+[data-theme="dark"] {
+    --border-black: #bebebe;
+    --bg-gray: #252525;
+    --link-blue: #86a9ff;
+    --bg-blue: #274a54;
+    --bg-dark-gray: #303030;
+
+    --font-color: #eee;
+    --background-color: #4a4a4a;
+    --link-color: lightblue;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Comfortaa';
+    min-height: 100vh;
 }
+
+a {
+    color: var(--link-blue);
+}
+
 p, h3, h1, h2 {
     margin: 0px;
 }
@@ -22,6 +50,7 @@ p, h3, h1, h2 {
     border: solid 2px var(--border-black);
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    color: var(--font-color);
 }
 
 .genericLink {
