@@ -10,6 +10,9 @@ https://vimeo.com/773582434
 ### home page
 ![home page](./public/screenshots/home-page.png)
 
+### landing page
+![landing page](./public/screenshots/landing-page.png)
+
 ### upload facet page
 ![upload facet page](./public/screenshots/upload-facet.png)
 
