@@ -13,7 +13,7 @@ import {
 import { publicProvider } from 'wagmi/providers/public';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import '@rainbow-me/rainbowkit/styles.css';
-
+import { AppStateProvider } from './context/appState';
 
 
 const {chains, provider} = configureChains([chain.polygonMumbai], [publicProvider()]);
@@ -32,11 +32,13 @@ function App() {
   return (
     <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains}>
-          <BrowserRouter>
-            <Header />
-            <AppRoutes />
-            <Footer />
-          </BrowserRouter>
+            <AppStateProvider>
+              <BrowserRouter>
+                  <Header />
+                  <AppRoutes />
+                  <Footer />
+              </BrowserRouter>
+            </AppStateProvider>
         </RainbowKitProvider>
     </WagmiConfig>
   )

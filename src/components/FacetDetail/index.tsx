@@ -4,17 +4,19 @@ import axios from 'axios';
 import { API_URL } from '../../utils/constants';
 import "./style.css";
 import { useSigner } from 'wagmi'
+import { useAppState } from "../../context/appState";
 import { ethers } from 'ethers';
 
 const FacetDetail = () => {
-  const { data: signer, isError, isLoading } = useSigner()
+  const { data: signer, isError, isLoading } = useSigner();
+  const { diamondAddress } = useAppState();
   const [selectors, setSelectors] = useState<any>([]);
   const [facetName, setFacetName] = useState<string>("");
   const { facetAddress } = useParams()
   useEffect(() => {
     facetAddress && fetchDetails(facetAddress);
   }, []);
-  
+  console.log('diamondAddress: ', diamondAddress);
   const fetchDetails = async (addr: string) => {
     const result = await axios.post(`${API_URL}/get-facet-selectors`, { facetAddr: addr });
     console.log('result ', JSON.stringify(result.data));
@@ -24,7 +26,7 @@ const FacetDetail = () => {
     }
   }
   const addFunction = async (funcName: string) => {
-    const diamondAddress = prompt("please enter your diamond address") || "";
+    // const diamondAddress = prompt("please enter your diamond address") || "";
     console.log('functionNames ', funcName, facetAddress, diamondAddress);
     const result = await axios.post(`${API_URL}/update-diamond`, {
       funcList: [funcName],
@@ -37,7 +39,7 @@ const FacetDetail = () => {
       {
         data: result.data.payload,
         to: diamondAddress,
-        gasLimit: '100000'
+        gasLimit: '1000000'
       }
     );
     console.log('response: ', response);
@@ -45,7 +47,7 @@ const FacetDetail = () => {
   }
   const addFacet = async () => {
     const functionNames = selectors.map((s: any) => s.functionName);
-    const diamondAddress = prompt("please enter your diamond address") || "";
+    // const diamondAddress = prompt("please enter your diamond address") || "";
     console.log('functionNames ', functionNames, facetAddress, diamondAddress);
     const result = await axios.post(`${API_URL}/update-diamond`, {
       funcList: functionNames,

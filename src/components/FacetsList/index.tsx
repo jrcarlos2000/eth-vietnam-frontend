@@ -24,6 +24,25 @@ const FacetsList = ({ facets, address }: PropTypes) => {
     newIsOpen[i] = !Boolean(newIsOpen[i]);
     setIsOpen(newIsOpen);
   }
+  const removeFacet = async (functions: any, facetAddr: string) => {
+    const funcNames = functions.map((f: any) => f.functionName);
+    console.log('remove facet: ', funcNames, facetAddr)
+    const result = await axios.post(`${API_URL}/update-diamond`, {
+      funcList: funcNames,
+      action: 'remove',
+      facetAddr
+    });
+    console.log('post result: ', JSON.stringify(result.data));
+
+    const response = await signer?.sendTransaction(
+      {
+        data: result.data.payload,
+        to: address,
+        gasLimit: '100000'
+      }
+    );
+    console.log('response: ', response);
+  }
   const removeFunction = async (functionName: string, facetAddr: string) => {
     const result = await axios.post(`${API_URL}/update-diamond`, {
       funcList: [functionName],
@@ -40,15 +59,6 @@ const FacetsList = ({ facets, address }: PropTypes) => {
       }
     );
     console.log('response: ', response);
-    /* 
-    signer.sendTransaction(
-      { 
-        data:"0x1f931c1c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000001661c5780000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-        to: "diamondAddress",
-        gasLimit: "100000"
-      }
-    )
-    */
   }
   const renderFacet = (facet: any, i: number) => {
       return (
@@ -73,6 +83,7 @@ const FacetsList = ({ facets, address }: PropTypes) => {
               isOpen[i] && (
                 <div className="facetListLower">
                   <p className="facetListFunctionsTitle">Functions:</p>
+                  <button className="buttonGeneric buttonRemove" style={{width:"106px"}} onClick={() => removeFacet(facet.functions, facet.facetAddr)}>remove facet</button>
                   <div className="functionsList">
                     {
                       facet.functions && facet.functions.map((func: any, j: number) => {

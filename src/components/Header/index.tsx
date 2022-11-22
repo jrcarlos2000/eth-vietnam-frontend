@@ -1,9 +1,7 @@
 import './styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import WalletButton from "./WalletButton";
-// import facetsLogo from '../../assets/facets-logo.svg';
 import { useNavigate, useParams } from "react-router-dom";
-
 
 const Header = () => {
     const navigate = useNavigate();

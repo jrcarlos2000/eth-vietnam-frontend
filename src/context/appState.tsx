@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState, createContext } from "react";
-const AppContext = createContext(undefined);
+import React, { useContext, useEffect, useState, createContext } from "react";
+const AppContext = createContext({ diamondAddress: '' });
 
 const AppStateProvider = ({ children }: any): any => {
 
@@ -13,14 +13,15 @@ const AppStateProvider = ({ children }: any): any => {
 //     <AppContext.Provider value={appState}>
 //     {children}
 // </AppContext.Provider>
-    // return (
-    //     <AppContext.Provider value={appState}>
-    //         {children}
-    //     </AppContext.Provider>
-    // )
+    console.log("inside appState.tsx");
+    return (
+        <AppContext.Provider value={appState}>
+            {children}
+        </AppContext.Provider>
+    )
 }
 
-const useAppState = () => {
+const useAppState = (): any => {
     return useContext(AppContext);
 }
 
