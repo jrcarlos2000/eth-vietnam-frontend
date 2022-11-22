@@ -29,6 +29,7 @@
     margin: 20px auto 60px;
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
 }
 .dashboardInputContainer {
     display: flex;
@@ -49,5 +50,9 @@
 @media only  screen and (max-width: 768px) {
     .facetsListContainer {
         width: 100%;
+    }
+    .addressInput {
+        width: 80%;
+        min-width: auto;
     }
 }

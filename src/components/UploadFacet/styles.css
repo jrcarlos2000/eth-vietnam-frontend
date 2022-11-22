@@ -117,3 +117,15 @@ input, textarea {
     margin-top: 16px;
     width: 120px;
 }
+@media only  screen and (max-width: 768px) {
+    .uploadFacet {
+        padding: 80px 10px;
+        width: 100%;
+    }
+    .textInput {
+        width: 80%;
+    }
+    .sourceInput {
+        width: 80%;
+    }
+}
