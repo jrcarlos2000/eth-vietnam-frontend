@@ -22,3 +22,6 @@ https://vimeo.com/773582434
 ### facet detail page
 ![facet detail page](./public/screenshots/facet-detail.png)
 
+# Figma
+https://www.figma.com/file/eeAsEiEKwaUWSNCOZ2150V/Untitled?node-id=0%3A1&t=ot6CUWB7QHwrHZDD-1
+
