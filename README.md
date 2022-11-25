@@ -1,6 +1,8 @@
 # facets.wiki
 
 live demo: https://facets.wiki
+Github back-end repo : https://github.com/jrcarlos2000/eth-vietnam-backend
+Github contracts repo : https://github.com/jrcarlos2000/eth-vietnam-contracts
 
 # demo video
 https://vimeo.com/773582434
