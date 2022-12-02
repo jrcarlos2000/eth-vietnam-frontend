@@ -9,10 +9,6 @@ const AppStateProvider = ({ children }: any): any => {
         diamondAddress,
         setDiamondAddress,
     };
-
-//     <AppContext.Provider value={appState}>
-//     {children}
-// </AppContext.Provider>
     console.log("inside appState.tsx");
     return (
         <AppContext.Provider value={appState}>

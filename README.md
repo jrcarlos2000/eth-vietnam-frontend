@@ -2,6 +2,32 @@
 
 live demo: https://facets.wiki
 
+
+# GitHub Repos
+
+Front end:
+
+https://github.com/jrcarlos2000/eth-vietnam-frontend
+
+Back end:
+
+https://github.com/jrcarlos2000/eth-vietnam-backend
+
+Smart Contracts:
+
+https://github.com/jrcarlos2000/eth-vietnam-contracts
+
+
+# About:
+
+Facets Wiki is a developer tool that allows users to :
+
+1. Inspect and manage diamonds
+2. Add audited facets to our database
+3. Add deployed facets to their diamonds
+4. Add / Delete functions from their diamonds.
+5. Facets Wiki makes it easier for developers to get acquainted with the Diamond Proxy and contract system.
+
 # demo video
 https://vimeo.com/773582434
 
