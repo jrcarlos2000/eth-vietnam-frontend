@@ -1,1 +1,1 @@
-export const API_URL = 'https://shark-app-ciezx.ondigitalocean.app'
+export const API_URL = "http://localhost:9000";
