@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:9000";
+export const API_URL = "https://walrus-app-h8wot.ondigitalocean.app";
