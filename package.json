@@ -32,7 +32,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "yarn global add serve && serve -l 8066 -s build",
+    "start": "react-scripts start",
     "start:dev": "PORT=8066 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
