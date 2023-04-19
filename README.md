@@ -4,6 +4,9 @@ live demo: https://facets.wiki
 Github back-end repo : https://github.com/jrcarlos2000/eth-vietnam-backend
 Github contracts repo : https://github.com/jrcarlos2000/eth-vietnam-contracts
 
+### ETHVietnam Winning Submission
+
+[Link to Dora Hacks page](https://dorahacks.io/buidl/3887)
 
 # GitHub Repos
 
